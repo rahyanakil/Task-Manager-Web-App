@@ -48,6 +48,25 @@ form button:hover {
     background-color: #555;
 }
 
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.filters button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #555;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -76,8 +95,25 @@ li button {
     border-radius: 4px;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
 }
 
 li button:hover {
     background-color: darkred;
+}
+
+li .edit-button {
+    background-color: blue;
+}
+
+li .edit-button:hover {
+    background-color: darkblue;
+}
+
+li .complete-button {
+    background-color: green;
+}
+
+li .complete-button:hover {
+    background-color: darkgreen;
 }
