@@ -9,10 +9,18 @@
 <body>
     <div class="container">
         <h1>Task Manager</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
         <form id="taskForm">
             <input type="text" id="taskInput" placeholder="Enter a new task" required>
+            <input type="date" id="dueDateInput" placeholder="Due Date">
+            <select id="priorityInput">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
             <button type="submit">Add Task</button>
         </form>
+        <input type="text" id="searchInput" placeholder="Search tasks" onkeyup="searchTasks()">
         <div class="filters">
             <button onclick="filterTasks('all')">All</button>
             <button onclick="filterTasks('pending')">Pending</button>
