@@ -18,6 +18,12 @@
                 <option value="Medium">Medium</option>
                 <option value="High">High</option>
             </select>
+            <select id="categoryInput">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+            <textarea id="descriptionInput" placeholder="Task Description"></textarea>
             <button type="submit">Add Task</button>
         </form>
         <input type="text" id="searchInput" placeholder="Search tasks" onkeyup="searchTasks()">
@@ -25,6 +31,11 @@
             <button onclick="filterTasks('all')">All</button>
             <button onclick="filterTasks('pending')">Pending</button>
             <button onclick="filterTasks('completed')">Completed</button>
+        </div>
+        <div class="sorting">
+            <button onclick="sortTasks('dueDate')">Sort by Due Date</button>
+            <button onclick="sortTasks('priority')">Sort by Priority</button>
+            <button onclick="sortTasks('category')">Sort by Category</button>
         </div>
         <ul id="taskList"></ul>
     </div>

@@ -55,7 +55,7 @@ form {
     margin-bottom: 1rem;
 }
 
-form input, form select {
+form input, form select, form textarea {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     border: 1px solid #ccc;
@@ -83,13 +83,13 @@ form button:hover {
     width: 100%;
 }
 
-.filters {
+.filters, .sorting {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
-.filters button {
+.filters button, .sorting button {
     padding: 0.5rem 1rem;
     background-color: #333;
     color: white;
@@ -98,7 +98,7 @@ form button:hover {
     cursor: pointer;
 }
 
-.filters button:hover {
+.filters button:hover, .sorting button:hover {
     background-color: #555;
 }
 
